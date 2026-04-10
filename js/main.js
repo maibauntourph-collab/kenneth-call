@@ -94,6 +94,39 @@ if (heroStats) {
   statsObserver.observe(heroStats);
 }
 
+// ===== DEMO TABS + ELEVENLABS WIDGET SWITCHING =====
+const DEMO_AGENTS = {
+  'real-estate': 'agent_9901knvzexs9fpjbsa4t094gmtby',
+  'dental': 'agent_4001knwaksf5ef8r40fqmrmr6fk5'
+};
+
+const demoTabs = document.querySelectorAll('.demo-tab');
+const demoPanels = document.querySelectorAll('.demo-panel');
+
+function switchElevenLabsAgent(agentId) {
+  const container = document.getElementById('elevenlabs-widget-container');
+  if (container) {
+    container.innerHTML = '';
+    const widget = document.createElement('elevenlabs-convai');
+    widget.setAttribute('agent-id', agentId);
+    container.appendChild(widget);
+  }
+}
+
+demoTabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = tab.dataset.demo;
+    demoTabs.forEach(t => t.classList.remove('active'));
+    demoPanels.forEach(p => p.classList.remove('active'));
+    tab.classList.add('active');
+    const panel = document.getElementById('demo-' + target);
+    if (panel) panel.classList.add('active');
+
+    const agentId = DEMO_AGENTS[target];
+    if (agentId) switchElevenLabsAgent(agentId);
+  });
+});
+
 // ===== SMOOTH SCROLL FOR ANCHOR LINKS =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {

@@ -148,11 +148,20 @@ button{cursor:pointer;font-family:inherit}
 .demo-sample-label{display:block;font-size:.75rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:2px;font-weight:600;margin-bottom:12px}
 .demo-sample-q{padding:12px 16px;background:rgba(108,92,231,.06);border:1px solid rgba(108,92,231,.15);border-radius:var(--radius-xs);font-size:.85rem;color:var(--text-muted);margin-bottom:8px;font-style:italic;transition:var(--transition);cursor:default}
 .demo-sample-q:hover{border-color:var(--primary);color:var(--text);background:rgba(108,92,231,.1)}
+/* Demo Tabs */
+.demo-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:48px;justify-content:center}
+.demo-tab{padding:10px 24px;border-radius:50px;font-size:.85rem;font-weight:600;background:var(--bg-card);border:1px solid var(--border);color:var(--text-muted);transition:var(--transition);cursor:pointer}
+.demo-tab:hover,.demo-tab.active{border-color:var(--primary);color:var(--primary-light);background:rgba(108,92,231,.08)}
+.demo-panel{display:none;animation:fadeInUp .4s ease}
+.demo-panel.active{display:block}
 @media(max-width:768px){
   .demo-grid{grid-template-columns:1fr}
   .demo-cta-box{padding:28px 20px}
   .demo-visual{height:80px}
   .demo-mic-icon{font-size:2.4rem}
+  .demo-tabs{justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;padding-bottom:8px;gap:6px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .demo-tabs::-webkit-scrollbar{display:none}
+  .demo-tab{white-space:nowrap;flex-shrink:0;padding:8px 16px;font-size:.8rem}
 }
 .industry-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:48px;justify-content:center}
 .industry-tab{padding:10px 24px;border-radius:50px;font-size:.85rem;font-weight:600;background:var(--bg-card);border:1px solid var(--border);color:var(--text-muted);transition:var(--transition);cursor:pointer}

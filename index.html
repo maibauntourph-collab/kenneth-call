@@ -307,64 +307,129 @@
   </div>
 </section>
 
-<!-- ===================== REAL ESTATE VOICE AGENT DEMO ===================== -->
+<!-- ===================== LIVE DEMO ===================== -->
 <section class="demo section" id="demo">
   <div class="container">
     <div class="text-center">
       <div class="section-label" data-i18n="demo.label">Live Demo</div>
-      <h2 class="section-title reveal" data-i18n-html="demo.title">Try Our <span>Real Estate Voice Agent</span> Now</h2>
-      <p class="section-subtitle mx-auto reveal" data-i18n="demo.subtitle">Experience how our AI voice agent handles real estate inquiries — property availability, pricing, viewing schedules, and more. Click the chat icon in the bottom-right corner to start talking.</p>
+      <h2 class="section-title reveal" data-i18n-html="demo.title">Try Our <span>AI Voice Agents</span> Live</h2>
+      <p class="section-subtitle mx-auto reveal" data-i18n="demo.subtitle">Experience our AI voice agents in action. Select an industry below and click the chat icon to start a live conversation.</p>
     </div>
-    <div class="demo-grid reveal">
-      <div class="demo-info">
-        <div class="demo-badge">
-          <span class="dot"></span>
-          <span data-i18n="demo.badge">🏠 Real Estate AI Agent — Live</span>
+    <div class="demo-tabs reveal">
+      <button class="demo-tab active" data-demo="real-estate" data-agent-id="agent_9901knvzexs9fpjbsa4t094gmtby" data-i18n="demo.tab.real">🏠 Real Estate</button>
+      <button class="demo-tab" data-demo="dental" data-agent-id="agent_4001knwaksf5ef8r40fqmrmr6fk5" data-i18n="demo.tab.dental">🦷 Dental</button>
+    </div>
+
+    <!-- Real Estate Demo Panel -->
+    <div class="demo-panel active" id="demo-real-estate">
+      <div class="demo-grid">
+        <div class="demo-info">
+          <div class="demo-badge">
+            <span class="dot"></span>
+            <span data-i18n="demo.real.badge">🏠 Real Estate AI Agent — Live</span>
+          </div>
+          <h3 data-i18n="demo.real.info.title">What This Agent Can Do</h3>
+          <div class="demo-features">
+            <div class="demo-feature">
+              <span class="demo-icon">🏢</span>
+              <div>
+                <strong data-i18n="demo.real.feat1.title">Property Inquiries</strong>
+                <p data-i18n="demo.real.feat1.desc">Ask about available units, pricing, floor plans, and amenities</p>
+              </div>
+            </div>
+            <div class="demo-feature">
+              <span class="demo-icon">📅</span>
+              <div>
+                <strong data-i18n="demo.real.feat2.title">Viewing Scheduling</strong>
+                <p data-i18n="demo.real.feat2.desc">Book property viewings and site visits with the AI assistant</p>
+              </div>
+            </div>
+            <div class="demo-feature">
+              <span class="demo-icon">💰</span>
+              <div>
+                <strong data-i18n="demo.real.feat3.title">Pricing &amp; Payment Terms</strong>
+                <p data-i18n="demo.real.feat3.desc">Get detailed pricing, monthly amortization, and payment options</p>
+              </div>
+            </div>
+            <div class="demo-feature">
+              <span class="demo-icon">🔔</span>
+              <div>
+                <strong data-i18n="demo.real.feat4.title">Lead Capture &amp; Follow-up</strong>
+                <p data-i18n="demo.real.feat4.desc">Automatically captures your info and sets up notifications for new listings</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <h3 data-i18n="demo.info.title">What This Agent Can Do</h3>
-        <div class="demo-features">
-          <div class="demo-feature">
-            <span class="demo-icon">🏢</span>
-            <div>
-              <strong data-i18n="demo.feat1.title">Property Inquiries</strong>
-              <p data-i18n="demo.feat1.desc">Ask about available units, pricing, floor plans, and amenities</p>
-            </div>
+        <div class="demo-cta-box">
+          <div class="demo-visual">
+            <div class="demo-pulse-ring"></div>
+            <div class="demo-mic-icon">🎙️</div>
           </div>
-          <div class="demo-feature">
-            <span class="demo-icon">📅</span>
-            <div>
-              <strong data-i18n="demo.feat2.title">Viewing Scheduling</strong>
-              <p data-i18n="demo.feat2.desc">Book property viewings and site visits with the AI assistant</p>
-            </div>
-          </div>
-          <div class="demo-feature">
-            <span class="demo-icon">💰</span>
-            <div>
-              <strong data-i18n="demo.feat3.title">Pricing & Payment Terms</strong>
-              <p data-i18n="demo.feat3.desc">Get detailed pricing, monthly amortization, and payment options</p>
-            </div>
-          </div>
-          <div class="demo-feature">
-            <span class="demo-icon">🔔</span>
-            <div>
-              <strong data-i18n="demo.feat4.title">Lead Capture & Follow-up</strong>
-              <p data-i18n="demo.feat4.desc">Automatically captures your info and sets up notifications for new listings</p>
-            </div>
+          <h3 data-i18n="demo.cta.title">Talk to the AI Agent</h3>
+          <p data-i18n="demo.real.cta.desc">Click the chat widget in the bottom-right corner to start a live conversation with our real estate voice agent.</p>
+          <div class="demo-sample-questions">
+            <span class="demo-sample-label" data-i18n="demo.sample.label">Try asking:</span>
+            <div class="demo-sample-q" data-i18n="demo.real.sample.1">"Are there any 2-bedroom condos available in BGC?"</div>
+            <div class="demo-sample-q" data-i18n="demo.real.sample.2">"How much is the monthly rent for a studio unit?"</div>
+            <div class="demo-sample-q" data-i18n="demo.real.sample.3">"Can I schedule a viewing this weekend?"</div>
           </div>
         </div>
       </div>
-      <div class="demo-cta-box">
-        <div class="demo-visual">
-          <div class="demo-pulse-ring"></div>
-          <div class="demo-mic-icon">🎙️</div>
+    </div>
+
+    <!-- Dental Demo Panel -->
+    <div class="demo-panel" id="demo-dental">
+      <div class="demo-grid">
+        <div class="demo-info">
+          <div class="demo-badge">
+            <span class="dot"></span>
+            <span data-i18n="demo.dental.badge">🦷 Dental Clinic AI Agent — Live</span>
+          </div>
+          <h3 data-i18n="demo.dental.info.title">What This Agent Can Do</h3>
+          <div class="demo-features">
+            <div class="demo-feature">
+              <span class="demo-icon">🦷</span>
+              <div>
+                <strong data-i18n="demo.dental.feat1.title">Appointment Booking</strong>
+                <p data-i18n="demo.dental.feat1.desc">Schedule dental checkups, cleanings, and treatments with the AI</p>
+              </div>
+            </div>
+            <div class="demo-feature">
+              <span class="demo-icon">💊</span>
+              <div>
+                <strong data-i18n="demo.dental.feat2.title">Treatment Inquiries</strong>
+                <p data-i18n="demo.dental.feat2.desc">Ask about dental procedures, costs, and recovery times</p>
+              </div>
+            </div>
+            <div class="demo-feature">
+              <span class="demo-icon">💰</span>
+              <div>
+                <strong data-i18n="demo.dental.feat3.title">Pricing &amp; Insurance</strong>
+                <p data-i18n="demo.dental.feat3.desc">Get pricing info, insurance coverage, and payment plan options</p>
+              </div>
+            </div>
+            <div class="demo-feature">
+              <span class="demo-icon">🔔</span>
+              <div>
+                <strong data-i18n="demo.dental.feat4.title">Reminders &amp; Follow-up</strong>
+                <p data-i18n="demo.dental.feat4.desc">Appointment reminders, post-treatment care, and follow-up scheduling</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <h3 data-i18n="demo.cta.title">Talk to the AI Agent</h3>
-        <p data-i18n="demo.cta.desc">Click the chat widget in the bottom-right corner to start a live conversation with our real estate voice agent.</p>
-        <div class="demo-sample-questions">
-          <span class="demo-sample-label" data-i18n="demo.sample.label">Try asking:</span>
-          <div class="demo-sample-q" data-i18n="demo.sample.1">"Are there any 2-bedroom condos available in BGC?"</div>
-          <div class="demo-sample-q" data-i18n="demo.sample.2">"How much is the monthly rent for a studio unit?"</div>
-          <div class="demo-sample-q" data-i18n="demo.sample.3">"Can I schedule a viewing this weekend?"</div>
+        <div class="demo-cta-box">
+          <div class="demo-visual">
+            <div class="demo-pulse-ring"></div>
+            <div class="demo-mic-icon">🎙️</div>
+          </div>
+          <h3 data-i18n="demo.cta.title">Talk to the AI Agent</h3>
+          <p data-i18n="demo.dental.cta.desc">Click the chat widget in the bottom-right corner to start a live conversation with our dental clinic voice agent.</p>
+          <div class="demo-sample-questions">
+            <span class="demo-sample-label" data-i18n="demo.sample.label">Try asking:</span>
+            <div class="demo-sample-q" data-i18n="demo.dental.sample.1">"I'd like to book a dental cleaning for next week"</div>
+            <div class="demo-sample-q" data-i18n="demo.dental.sample.2">"How much does a tooth extraction cost?"</div>
+            <div class="demo-sample-q" data-i18n="demo.dental.sample.3">"Do you accept HMO insurance?"</div>
+          </div>
         </div>
       </div>
     </div>
@@ -606,8 +671,10 @@ Cal("ui", {
   </div>
 </footer>
 
-<!-- ElevenLabs Conversational AI Widget — Real Estate Voice Agent -->
-<elevenlabs-convai agent-id="agent_9901knvzexs9fpjbsa4t094gmtby"></elevenlabs-convai>
+<!-- ElevenLabs Conversational AI Widget — Dynamic -->
+<div id="elevenlabs-widget-container">
+  <elevenlabs-convai agent-id="agent_9901knvzexs9fpjbsa4t094gmtby"></elevenlabs-convai>
+</div>
 <script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
 
 <script src="js/translations.js"></script>
