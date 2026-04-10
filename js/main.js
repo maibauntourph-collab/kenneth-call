@@ -103,13 +103,23 @@ const DEMO_AGENTS = {
 const demoTabs = document.querySelectorAll('.demo-tab');
 const demoPanels = document.querySelectorAll('.demo-panel');
 
-function switchElevenLabsAgent(agentId) {
+const DEMO_LABELS = {
+  'real-estate': 'REAL ESTATE',
+  'dental': 'DENTAL'
+};
+
+function switchElevenLabsAgent(agentId, demoKey) {
   const container = document.getElementById('elevenlabs-widget-container');
   if (container) {
-    container.innerHTML = '';
+    const oldWidget = container.querySelector('elevenlabs-convai');
+    if (oldWidget) oldWidget.remove();
     const widget = document.createElement('elevenlabs-convai');
     widget.setAttribute('agent-id', agentId);
-    container.appendChild(widget);
+    container.insertBefore(widget, container.firstChild);
+  }
+  const label = document.getElementById('widget-label');
+  if (label && demoKey) {
+    label.textContent = DEMO_LABELS[demoKey] || demoKey.toUpperCase();
   }
 }
 
@@ -123,7 +133,7 @@ demoTabs.forEach(tab => {
     if (panel) panel.classList.add('active');
 
     const agentId = DEMO_AGENTS[target];
-    if (agentId) switchElevenLabsAgent(agentId);
+    if (agentId) switchElevenLabsAgent(agentId, target);
   });
 });
 
